@@ -1,0 +1,131 @@
+{{!-- <header class="masthead text-center">
+  <h2>Almost Finished!</h2>
+  <h3>Please fill in below fields before you get started!</h3>
+</header> --}}
+
+
+
+<div class="container reg-container">
+  {{#if errorMessage}}
+    <div class="alert alert-danger text-center" role="alert">
+      Field(s) cannot be empty!
+    </div>
+  {{/if}}
+
+  {{#if dataExists}}
+    <div class="alert alert-danger text-center" role="alert">
+    Data already exists!
+    </div>
+  {{/if}}
+
+  {{#if welcome}}
+   <div class="welcome-subcontainer">
+      <p class="welcome-title"> Welcome to <strong> RIDE WITH ME. </strong></p>
+      <span class="welcome-text"></span>First, fill in your profile. Then, you can offer or search trips.
+      Don't worry, you'll only need to do it once.</span>
+    </div>
+  {{/if}}
+
+
+<h4 class="profile-title">My Profile</h4>
+  <form action="/registration" method="POST" enctype="multipart/form-data">
+  {{#if hideUpload}}
+    <div class="form-group row"> 
+      <div class="col-sm-12">
+        <label for="name" class="col-sm-3 col-form-label text-center ">Upload profile picture</label>
+        <input type="file" class="btn btn-info btn-sm" name="photo">
+        <input type="submit" class="btn btn-info btn-sm text-center mt-1" value="Add picture" name="addPicture">
+      </div>
+    </div>
+  {{/if}}
+     <div>
+      <img src="{{ profile.path }}" alt="{{ this.originalName }}" width="96" />
+    </div>
+
+    <div class="form-group row">
+      <label for="firstname" class="col-sm-3 col-form-label">First Name*</label>
+      <div class="col-sm-9">
+        <input  value="{{profile.firstname}}" type="text" class="form-control" id="firstname_pre" name="firstname"  placeholder="Enter your fist name" required="true">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="lastname" class="col-sm-3 col-form-label">Last Name*</label>
+      <div class="col-sm-9">
+        <input value="{{profile.lastname}}" type="text" class="form-control" id="lastname_pre" name="lastname"  placeholder="Enter your last name" required="true">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="email" class="col-sm-3 col-form-label">Email*</label>
+      <div class="col-sm-9">
+        <input value="{{profile.email}}" type="email" class="form-control" id="email_pre" name="email" aria-describedby="emailHelp" placeholder="Enter email" required="true">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="phone" class="col-sm-3 col-form-label">Phone*</label>
+      <div class="col-sm-9">
+        <input value="{{profile.phone}}" type="text" class="form-control" id="phone_pre" name="phone"  placeholder="Enter your phone number" required="true">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="birthdate" class="col-sm-3 col-form-label">Birth Date*</label>
+      <div class="col-sm-9">
+        <input value="{{profile.birthdate}}" type="date" class="form-control" id="birthdate_pre" name="birthdate" required="true">
+      </div>
+    </div>
+    
+    <fieldset class="form-group">
+      <div class="row">
+        <legend  class="col-form-label col-sm-3 pt-0" required="true">Gender*</legend>
+        <div class="col-sm-9">
+          <div class="form-check">
+            <input  {{#ifEquals profile.gender "Female"}}checked="checked"{{/ifEquals}} class="form-check-input" type="radio" name="gender" id="female" value="Female">
+            <label class="form-check-label" for="female">
+              Female
+            </label>
+          </div>
+          <div class="form-check">
+            <input  {{#ifEquals profile.gender "Male"}}checked="checked"{{/ifEquals}} class="form-check-input" type="radio" name="gender" id="male" value="Male">
+            <label class="form-check-label" for="male">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input  {{#ifEquals profile.gender "Other"}}checked="checked"{{/ifEquals}} class="form-check-input" type="radio" name="gender" id="other" value="Other">
+            <label class="form-check-label" for="other">
+            Other
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form-group row">
+      <label for="driving_license" class="col-sm-3 col-form-label">Driving License</label>
+      <div class="col-sm-9">
+        <input value="{{profile.driving_license}}" type="text" class="form-control" id="driving_license_pre" name="driving_license"  placeholder="Enter your driving license number">
+      </div>
+    </div>
+
+  <div class="form-group row">
+      <label for="car_type" class="col-sm-3 col-form-label">Car Type</label>
+      <div class="col-sm-9">
+        <input value="{{profile.car_type}}" type="text" class="form-control" id="car_type_pre" name="car_type"  placeholder="Enter your car type">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="car_color" class="col-sm-3 col-form-label">Car Color</label>
+      <div class="col-sm-9">
+        <input value="{{profile.car_color}}" type="text" class="form-control" id="car_color_pre" name="car_color"  placeholder="Enter your car color">
+        <small id="required" class="form-text text-muted">*required fields</small>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-12 text-center mt-1">
+        <button type="submit" class="btn btn-primary btn-lg" value="1" name="save">Save</button>
+      </div>
+    </div>
+  </form>
+</div>

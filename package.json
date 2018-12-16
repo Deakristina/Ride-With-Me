@@ -1,0 +1,49 @@
+{
+    "name": "project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./bin/www",
+        "dev": "DEBUG=awesome-project:* nodemon ./bin/www",
+        "dev-windows": "nodemon ./bin/www"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "5.3.1",
+        "bcrypt": "^3.0.2",
+        "body-parser": "^1.18.3",
+        "bootstrap": "4.1.3",
+        "connect-mongo": "^2.0.1",
+        "cookie-parser": "^1.4.3",
+        "dotenv": "^6.0.0",
+        "express": "^4.16.4",
+        "express-favicon": "^2.0.1",
+        "express-handlebars": "^3.0.0",
+        "express-router": "0.0.1",
+        "express-session": "^1.15.6",
+        "gulp-concat": "^2.6.1",
+        "hbs": "^4.0.1",
+        "jquery": "3.3.1",
+        "jquery.easing": "^1.4.1",
+        "magnific-popup": "^1.1.0",
+        "mongoose": "^5.3.11",
+        "multer": "^1.4.1",
+        "node-sass-middleware": "^0.11.0",
+        "nodemailer": "^4.7.0",
+        "serve-favicon": "^2.5.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.3",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "6.0.0",
+        "gulp-clean-css": "3.10.0",
+        "gulp-filter": "5.1.0",
+        "gulp-header": "2.0.5",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "4.0.1",
+        "gulp-uglify": "3.0.1"
+    }
+}

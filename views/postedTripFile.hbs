@@ -1,0 +1,22 @@
+
+{{#if offerTrip}}
+  <header action="/trip-posted" class="bg-primary header-posted text-white text-center">
+    <div class="container">
+      <img class="img-fluid mb-0 d-block mx-auto posted-img" src="img/car1.png" alt="">
+      <h1 class="text-uppercase mt-0 mb-0">Trip is posted!</h1>
+      <hr class="star-light">
+      <h2 class="font-weight-light mb-0">Awaiting passenger(s)..</h2>
+    </div>
+  </header>
+{{/if}}
+
+{{#if searchTrip}}
+  <header action="/trip-posted" class="bg-primary  header-posted text-white text-center">
+    <div action="/trip-posted" class="container bg-primary text-white text-center">
+      <img class="img-fluid mb-0 d-block mx-auto posted-img" src="img/car1.png" alt="">
+      <h1 class="text-uppercase mt-0 mb-0">Joined a Trip!</h1>
+      <hr class="star-light">
+    </div>
+  </header>
+{{/if}}
+

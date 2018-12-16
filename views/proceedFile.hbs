@@ -1,0 +1,37 @@
+
+
+<div class="container dashboard-container">
+  <form action="/proceed">
+
+    {{#if allFilled}}
+    <div class="container circle-container">
+      <div class="add-container">
+        <p class="offer offer-text">Offer Trip</p>
+        <p class="offer"> <img class="add-icon" src="/img/addTrip.png" alt="add Trip"></p> 
+      </div>
+      <div class="search-container">
+        <a href="/available-trips" ><img class="search-icon search" src="/img/searchTrip.png" alt="search Trip"></a>
+        <a href="/available-trips" class="search-text search">Search Trip</a>
+      </div>
+    </div>
+  
+       <div class="container add-history-btn">
+      <a class="btn btn-primary"  id="add-trip-btn" href="/offer-trip">Add new trip</a>
+      <p class="or-text">OR</p>
+      <a class="btn btn-primary" id="history-trip-btn" href="/history">Go to Trip History</a>
+      </div>
+  
+    {{/if}}
+
+    {{#if partlyFilled}}
+      <div class="add-container">
+        <a class="offer-text">Offer Trip</a>
+        <a> <img type="button" data-container="body" data-toggle="popover" data-content="You need to fill in your driving license's detail in My Profile" class="add-icon" src="/img/addTrip.png" alt="add Trip"></a> 
+      </div>
+      <div class="search-container">
+        <a href="/available-trips" ><img class="search-icon" src="/img/searchTrip.png" alt="search Trip"></a>
+        <a href="/available-trips" class="search-text">Search Trip</a>
+      </div>
+    {{/if}}
+  </form>
+ </div>

@@ -1,0 +1,20 @@
+<div class="container history-container">
+
+  <h3 class="find-title">Trip History</h3>
+<form action="/passenger-trip" method="POST">
+
+
+</form>
+
+<div class="item-container">
+  {{#each trips}}
+  <div class="item-history">
+      <p> <strong>From: </strong> {{this.from}}</p>
+      <hr>
+      <p> <strong>To: </strong> {{this.to}}</p>
+      <hr>
+      <p> <strong>Departure: </strong> {{this.departure}}</p>
+    </div>
+  {{/each}}
+</div>
+</div>

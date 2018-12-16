@@ -1,0 +1,39 @@
+
+<div class="container trip-subcontainer">
+  <p>From: {{trip.from}} </p>
+  <p>To: {{trip.to}} </p>
+  <p>Departure: {{trip.departure}}</p>
+  <p>Offered seat(s): 
+    <span id="available-seats"> {{subtract trip.offered_seats trip.occupied_seats}}</span>
+  </p>
+  <p>Asking Price: &euro;<span id="asking-price">{{trip.asking_price}}</span></p>
+</div>
+
+<form action="/join-trip?tripId={{trip._id}}" method="POST">
+  <div class="form-row">
+    <div class="col-4">
+      <label for="seats" class="col-sm-3 col-form-label">Passenger(s): </label>
+      <input type="number" class="form-control text-center" id="passenger-seats" name="seats" required value="0">
+    </div>
+     <div class="col-4">
+      <label for="price" class="col-sm-3 col-form-label">Seat(s): </label>
+      <input type="number" disabled class="form-control text-center" id="seat-remain" name="seat_remain" required="true" value="{{subtract trip.offered_seats trip.occupied_seats}}">
+    </div>
+    <div class="col-4">
+      <label for="price" class="col-sm-3 col-form-label">Total: </label>
+      <input type="number" disabled class="form-control euro" id="total-price" name="asking_price" required="true" value="{{trip.asking_price}}">
+    </div>
+   
+    </div>
+  <div class="form-group row justify-content-center">
+    <div class="col-6  mt-3">
+      <button type="submit" class="btn btn-primary btn-lg btn-continue">Join Trip</button>
+      {{!-- <a class="btn btn-primary btn-lg btn-continue"  href="/trip-posted?tripId={{trip._id}}">Join Trip</a> --}}
+    </div>
+   </div>
+    <div class="form-group row justify-content-center">
+      <div class="col-6  mt-4">
+       <a class="btn btn-secondary btn-lg btn-back" href="/available-trips">Back to search</a>
+    </div>
+   </div>
+</form>
