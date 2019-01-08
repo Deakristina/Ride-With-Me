@@ -1,294 +1,307 @@
-.header-index, .container-offer, .login-container, .reg-container, .dashboard-container, .search-trip-container, .history-container  {
-  padding-top: 15vh;
+.header-index,
+.container-offer,
+.login-container,
+.reg-container,
+.dashboard-container,
+.search-trip-container,
+.history-container {
+	padding-top: 15vh;
+}
+
+.img-fluid-title {
+	margin-top: 4vh;
 }
 
 .title-top {
-  margin-top: 2vh;
-  text-align: center;
+	margin-top: 5vh;
+	text-align: center;
 }
 
 .form-container {
-  margin: 0 2vw;
+	margin: 0 2vw;
 }
 
 .btn-log {
-  margin: 2vh auto;
-  display: block;
+	margin: 2vh auto;
+	display: block;
 }
 
 /* ---Index--- */
 
 .title-index {
-  font-size: 9vw;
+	font-size: 9vw;
 }
 
 .subtitle-index {
-  font-size: 4vw;
-  padding-bottom: 5vh;
+	font-size: 4vw;
+	padding-bottom: 5vh;
 }
 
 /* ---Login--- */
 .no-account {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  height: 15vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: 15vh;
 }
 
 /* ---SIGNUP--- */
 .signup-container {
-  padding-top: 11vh;
+	padding-top: 11vh;
 }
 
 .requirement-group {
-  padding-left: 0;
+	padding-left: 0;
 }
 
-.requirement-item{
-  list-style-type: none;
-  padding-left: 0.3vw;
-  font-size: 12px;
-  font-family: Lato;
+.requirement-item {
+	list-style-type: none;
+	padding-left: 0.3vw;
+	font-size: 12px;
+	font-family: Lato;
 }
-
 
 .green {
-  color: green;
+	color: green;
 }
 
 .inactive {
-  color: #1cb084;
-  cursor: none;
+	color: #1cb084;
+	cursor: none;
 }
 
-.first-offer-top{
-  display: flex;
-  justify-content: space-evenly;
+.first-offer-top {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 /* ---postedTrip--- */
 
 .header-posted {
-  padding: 8vh 0 10vh;
+	padding: 8vh 0 10vh;
 }
 .posted-img {
-  margin-top: 2.5vh;
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 /* ---Registration--- */
 .profile-title {
-  text-align: center;
+	text-align: center;
 }
 
 .welcome-subcontainer {
-  background-color: #ff6933;
-  color: #fff;
-  margin-bottom: 3vh;
-  padding: 0.5vh 2vw;
-  border-radius: 4px;
-  opacity: 0.9;
-  width: auto;
+	background-color: #ff6933;
+	color: #fff;
+	margin-bottom: 3vh;
+	padding: 0.5vh 2vw;
+	border-radius: 4px;
+	opacity: 0.9;
+	width: auto;
 }
 
 .welcome-text {
-  font-size: 2vw;
-  text-align: justify;
+	font-size: 2vw;
+	text-align: justify;
 }
 
 .welcome-title {
-  text-align: center;
+	text-align: center;
 }
 
 /* ---Dashboard--- */
 .circle-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 10vh;
-  padding-top: 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 10vh;
+	padding-top: 0;
 }
 
-.add-container, .search-container {
-  text-align: center;
-  font-size: 3vw;
+.add-container,
+.search-container {
+	text-align: center;
+	font-size: 3vw;
 }
 .add-container {
-  display: flex;
-  margin-bottom: 10vh;
+	display: flex;
+	margin-bottom: 10vh;
 }
 
 .offer-text {
-  line-height: 20vh;
-  color: #18bc9c;
-  font-size: 5vw;
+	line-height: 20vh;
+	color: #18bc9c;
+	font-size: 5vw;
 }
 
-.offer-text, .search-text {
-  font-weight: bolder;
+.offer-text,
+.search-text {
+	font-weight: bolder;
 }
 
 img.add-icon {
-  width: 90%;
-  
+	width: 90%;
 }
 
 img.search-icon {
-  width: 20%;
-  align-self: flex-end;
-  
+	width: 20%;
+	align-self: flex-end;
 }
 
 .add-history-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-#history-trip-btn, #add-trip-btn {
-  width: 50vw;
+#history-trip-btn,
+#add-trip-btn {
+	width: 50vw;
 }
 
 .or-text {
-  margin: 2vh 0;
-  font-weight: bolder;
+	margin: 2vh 0;
+	font-weight: bolder;
 }
 
 /* ---Available Trips--- */
 .find-title {
-  text-align: center;
+	margin-top: 5vh;
+	text-align: center;
 }
 
 .item-container {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
 }
 
-.item-subcontainer.light, .item-subcontainer.dark {
-  margin-bottom: 5vh;
+.item-subcontainer.light,
+.item-subcontainer.dark {
+	margin-bottom: 5vh;
 }
 
-
-.item-history, .item-subcontainer {
-  padding: 0 2vw;
-  width: auto;
-  font-size: 2vw;
-  margin-bottom: 5vh;
-  border-radius: 10px;
+.item-history,
+.item-subcontainer {
+	padding: 0 2vw;
+	width: auto;
+	font-size: 2vw;
+	margin-bottom: 5vh;
+	border-radius: 10px;
 }
 
 .light {
-  background-color: coral;
-  color: #fff;
+	background-color: coral;
+	color: #fff;
 }
 
 .dark {
-  background-color: #243342;
-  color: #fff;
+	background-color: #243342;
+	color: #fff;
 }
-
-
 
 /* ---History Trips--- */
 
 .cyan {
-  background-color: #cc9900;
-  color: #fff;
+	background-color: #cc9900;
+	color: #fff;
 }
 
 .yellow {
-  background-color: #18bc9c;
-  color: #fff;
+	background-color: #18bc9c;
+	color: #fff;
 }
 
 /* ---Offer Trip--- */
 input[type=number]#price {
- padding-left: 3vw;
+	padding-left: 3vw;
 }
 
 /* ---Join Trip--- */
 .euro {
-  background-image: url('/img/euro.png');
-  background-repeat: no-repeat;
-  background-position: left center;
+	background-image: url('/img/euro.png');
+	background-repeat: no-repeat;
+	background-position: left center;
 }
 
 input[value]#total-price {
-  text-align: center;
+	text-align: center;
 }
 
-.btn-continue, .btn-back {
-  width: 30vw;
+.btn-continue,
+.btn-back {
+	width: 30vw;
 }
 
-.btn-join, .btn-continue, .btn-back {
-  margin: 0 auto;
-  display: block;
+.btn-join,
+.btn-continue,
+.btn-back {
+	margin: 0 auto;
+	display: block;
 }
 
-.btn-join{
-  width: 30vw;
-  font-weight: bolder;
-  background-color: #fff;
-  color: #ff6933;
-  margin-bottom: 1vh;
+.btn-join {
+	width: 30vw;
+	font-weight: bolder;
+	background-color: #fff;
+	color: #ff6933;
+	margin-bottom: 1vh;
 }
-
 
 .trip-subcontainer {
-  padding: 2vh 2vw;
-  border-radius: 4px;
-  margin: 15vh auto 0;
-  width: 50vw;
-  font-size: 2vw;
-  font-weight: bolder;
-  color: #fff;
-  background-color: #ff7c4d;
+	padding: 2vh 2vw;
+	border-radius: 4px;
+	margin: 15vh auto 0;
+	width: 50vw;
+	font-size: 2vw;
+	font-weight: bolder;
+	color: #fff;
+	background-color: #ff7c4d;
 }
 
 /* ---media only--- */
 
 @media only screen and (max-width: 900px) {
-  .title-index {
-    font-size: 11vw;
-  }
-  .subtitle-index {
-    font-size: 7vw;
-    padding-bottom: 5vh;
-  }
-  img.search-icon {
-    width: 60%;
-  }
-  .offer-text, .search-text {
-    font-weight: bolder;
-    font-size: 5vw;
-  }
-  .item-subcontainer, .item-history {
-    width: auto;
-    font-size: 5vw;
-    margin-bottom: 5vh;
-  }
+	.title-index {
+		font-size: 11vw;
+	}
+	.subtitle-index {
+		font-size: 7vw;
+		padding-bottom: 5vh;
+	}
+	img.search-icon {
+		width: 60%;
+	}
+	.offer-text,
+	.search-text {
+		font-weight: bolder;
+		font-size: 5vw;
+	}
+	.item-subcontainer,
+	.item-history {
+		width: auto;
+		font-size: 5vw;
+		margin-bottom: 5vh;
+	}
 
-  .btn-continue, .btn-back {
-    width: 50vw;
-  }
+	.btn-continue,
+	.btn-back {
+		width: 50vw;
+	}
 
-  .trip-subcontainer {
-    font-size: 5vw;
-    margin: 15vh 0 3vh 3vw;
-    width: auto;
-  }
+	.trip-subcontainer {
+		font-size: 5vw;
+		margin: 15vh 0 3vh 3vw;
+		width: auto;
+	}
 
-  .btn-join{
-    width: 30vw;
-    font-weight: bolder;
-    margin-bottom: 1vh;
-  }
+	.btn-join {
+		width: 30vw;
+		font-weight: bolder;
+		margin-bottom: 1vh;
+	}
 
-  input[type=number]#price {
-    padding-left: 7vw;
-   }
-
+	input[type=number]#price {
+		padding-left: 7vw;
+	}
 }
